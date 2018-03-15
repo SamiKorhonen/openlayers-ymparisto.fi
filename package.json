@@ -4,6 +4,8 @@
   "description": "Testing Openlayers with paikkatieto.ymparisto.fi, which is ESRI ArcGIS Server with dynamic map sources",
   "main": "index.js",
   "scripts": {
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,8 +15,7 @@
   "keywords": [
     "OpenLayers",
     "ESRI",
-    "ArcGIS",
-    "server"
+    "ArcGIS"
   ],
   "author": "Sami Korhonen",
   "license": "ISC",
@@ -25,5 +26,9 @@
   "devDependencies": {
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12"
+  },
+  "dependencies": {
+    "openlayers": "^4.6.4",
+    "proj4": "^2.4.4"
   }
 }
