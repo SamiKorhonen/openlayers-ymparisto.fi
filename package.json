@@ -1,0 +1,29 @@
+{
+  "name": "openlayers-ymparisto.fi",
+  "version": "1.0.0",
+  "description": "Testing Openlayers with paikkatieto.ymparisto.fi, which is ESRI ArcGIS Server with dynamic map sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamiKorhonen/openlayers-ymparisto.fi.git"
+  },
+  "keywords": [
+    "OpenLayers",
+    "ESRI",
+    "ArcGIS",
+    "server"
+  ],
+  "author": "Sami Korhonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamiKorhonen/openlayers-ymparisto.fi/issues"
+  },
+  "homepage": "https://github.com/SamiKorhonen/openlayers-ymparisto.fi#readme",
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}
