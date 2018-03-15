@@ -1,10 +1,11 @@
-import "proj4"
-import "openlayers"
+import proj4 from "proj4"
+import ol from "openlayers"
 
-// Lisätään ETRS-TM-35-FIN projektio
+ol.proj.setProj4(proj4);
 proj4.defs("EPSG:3067", "+proj=utm +zone=35 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs");
 
 var proj3067 = ol.proj.get('EPSG:3067');
+console.log("Projectio for 3067", proj3067)
 proj3067.setExtent([44000, 6594000, 740000, 7782000]);
 
 var dynamicArcGISRestMapServiceUrl = 'http://kkgeoct1.env.fi/arcgis/rest/services/sykemaps/GISAineistot/MapServer/';
